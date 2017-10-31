@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+}
+
+.horizontal-line{
+    border-bottom:1px solid rgb(242, 242, 242)
+}

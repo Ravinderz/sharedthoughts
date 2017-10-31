@@ -1,0 +1,47 @@
+.article-display, .right-side-bar{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.card{
+    margin-bottom:10px;
+    margin-right:5px;
+}
+
+.card-text{
+    margin-bottom:10px;
+}
+
+.avatar{
+    padding:15px;
+}
+
+.seperator{
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.date{    
+    font-size:13px;
+    font-style: normal;
+}
+
+.article-author{
+    display: block;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.icons{
+    padding-top:5px;
+}
+
+.icons i{
+    padding-right:10px;
+    color:#28a745;
+}
+
+.list-group-item{
+    border: none;
+}

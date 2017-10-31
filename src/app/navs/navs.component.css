@@ -1,0 +1,16 @@
+.nav{
+    padding-top:7px;
+    padding-bottom:7px;
+}
+
+.horizontal-line{
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-link{
+    color: #868e96;
+}
+
+.nav-link:hover{
+    color: rgba(0,0,0,.68);
+}
