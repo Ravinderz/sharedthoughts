@@ -16,3 +16,7 @@ body {
 .pull-left{
     float: left;
 }
+
+.clear-fix{
+  clear: both;
+}

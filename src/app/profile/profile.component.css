@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+.profile-wrapper{
+    margin-top: 15px;
+}
+
+.avatar{
+    margin-right:20px;
+}
+
+.author-name{
+    margin-top:15px;
+    font-size:30px;
+    font-family: 'Signika', sans-serif;
+    font-weight: 500;
+}
+
+.wrapper{
+    border-bottom: 1px solid rgb(242, 242, 242);
+    padding-bottom: 20px;
+}
+
+.edit-profile{
+    margin-top: 30px;
+    margin-right:20px;
+   color:#007bff;
+}
+
+.interest-tags{
+    list-style: none;
+    padding-left:0;
+}
+
+.metrics-list{
+    list-style: none;
+    padding-left:0;
+    margin:auto;
+    width:560px;
+}
+
+.interest-tags li{
+    display: inline-block;
+    padding-right:3px;
+}
+
+.metrics{
+    margin-top:30px;
+}
+
+.card-round-link{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.card-round-link-first{
+    border: 1px solid #28a745;
+}
+.card-round-link-center{
+    border: 1px solid #ffc107;
+}
+.card-round-link-last{
+    border: 1px solid #dc3545;
+}
+
+
+
+.card-round-link-first:hover, .card-round-link-first:hover p{
+    cursor: pointer;
+    color:#ffffff!important;
+    background-color:#28a745;
+}
+
+.card-round-link-center:hover, .card-round-link-center:hover p{
+    cursor: pointer;
+    color:#ffffff!important;
+    background-color:#ffc107;
+}
+
+.card-round-link-last:hover, .card-round-link-last:hover p{
+    cursor: pointer;
+    color:#ffffff!important;
+    background-color:#dc3545;
+}
+
+.overflow-hidden{
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.metrics-number-1{
+    color:#28a745
+}
+
+.metrics-number-2{
+    color:#ffc107
+}
+
+.metrics-number-3{
+    color:#dc3545
+}
+
+.metrics-list li{
+    display: inline-block;
+    padding-right:32px;
+    text-align: center;
+    font-size:22px;
+    font-family: 'Signika', sans-serif;
+    font-weight: 500;
+}
+
+.metrics-text{
+    margin-top:30px;
+    margin-bottom:0;
+}
+
+.btn-outline-violet{
+    color: #8c42f4;
+    background-color: transparent;
+    background-image: none;
+    border-color: #8c42f4;
+}
