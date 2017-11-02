@@ -45,3 +45,19 @@
 .list-group-item{
     border: none;
 }
+
+.primary-card{
+    /* background-color: #17a2b8; 
+     color: #ffffff; */
+    background-color: #ffffff; 
+    border: 1px solid #17a2b8;
+    color: #17a2b8;
+}
+
+.secondary-card{
+    /* background-color: #ffc107;
+    color: #ffffff; */
+    background-color: #ffffff;
+    border: 1px solid #ffc107;
+    color: #ffc107;
+}
