@@ -121,3 +121,52 @@
     background-image: none;
     border-color: #8c42f4;
 }
+
+.recent-articles{
+    margin-top:80px;
+}
+
+.drafts{
+    margin-top:40px;
+}
+
+.heading{
+    margin-top:30px;
+    margin-bottom: 15px;
+}
+
+.card-header{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.primary-card{
+    border: 1px solid #17a2b8;
+}
+
+.primary-card .card-header{
+    color: #17a2b8;
+    background-color: #ffffff;
+    border-bottom: 1px solid #17a2b8; 
+}
+
+.secondary-card{
+    border: 1px solid #f4a142;
+}
+
+.secondary-card .card-header{
+    color: #f4a142;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f4a142; 
+}
+
+.casual-card{
+    border: 1px solid #8941f4;
+}
+
+.casual-card .card-header{
+    color: #8941f4;
+    background-color: #ffffff;
+    border-bottom: 1px solid #8941f4; 
+}
+

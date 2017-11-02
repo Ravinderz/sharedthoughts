@@ -61,3 +61,29 @@
     border: 1px solid #ffc107;
     color: #ffc107;
 }
+
+.topics-list{
+    margin-top:40px;
+}
+
+.topics-list-heading{
+    margin-bottom:30px;
+}
+
+.discover-topics:hover{
+    border-color: #343a40;
+    cursor: pointer;
+}
+
+.display-4{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media (min-width: 576px){
+ .card-columns {
+    -webkit-column-count: 6;
+    column-count: 6;
+
+}
+}
