@@ -1,0 +1,35 @@
+<div class="container login-center">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <span class="anchor" id="formLogin"></span>
+          <div class="card">
+            <div class="card-header">
+              <h3 class="mb-0">Login</h3>
+            </div>
+            <div class="card-body">
+              <form class="form" role="form" autocomplete="off" id="formLogin">
+                <div class="form-group">
+                  <label for="uname1">Username</label>
+                  <input type="text" class="form-control" name="uname1" id="uname1" required="">
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" class="form-control" id="pwd1" required="" autocomplete="new-password">
+                </div>
+                <div class="form-check small">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input"> <span class="remember">Remember me</span>
+                  </label>
+                </div>
+                <button type="button" class="btn btn-success btn-lg float-right signup" (click)="redirectToRegistration()">Sign Up</button>
+                <button type="button" class="btn btn-success btn-lg float-right">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
