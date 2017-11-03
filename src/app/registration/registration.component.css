@@ -1,11 +1,9 @@
-.cancel{
-    margin-left: 30px;
-}
 .float-right{
     color: #28a745;
     background-color: transparent;
     background-image: none;
     border-color: #28a745;
+    line-height: 1;
 }
 .card {
     position: relative;
@@ -24,7 +22,7 @@
 .card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    padding: 50px 50px 15px 50px;
+    padding: 50px 50px 50px 50px;
 }
 .buttons{
     margin-top: 35px;
