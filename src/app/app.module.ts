@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { WriteupsComponent } from './writeups/writeups.component';
+import { TinymceEditorComponent } from './tinymce-editor/tinymce-editor.component';
+
 
 const ROUTES = [
   {
@@ -31,6 +34,10 @@ const ROUTES = [
   {
     path:'register',
     component: RegistrationComponent
+  },
+  {
+    path:'writeup',
+    component:WriteupsComponent
   }
 ];
 
@@ -43,7 +50,9 @@ const ROUTES = [
     HomeComponent,
     ProfileComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    WriteupsComponent,
+    TinymceEditorComponent
   ],
   imports: [
     BrowserModule,
