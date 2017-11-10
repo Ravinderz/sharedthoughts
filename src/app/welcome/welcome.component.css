@@ -1,0 +1,76 @@
+.profile-completion-heading{
+    margin-top:40px;
+    margin-bottom:20px;
+}
+
+#profilePicture{
+    display:none;
+}
+
+.upload-icon{
+    position: absolute;
+    z-index: 10;
+    height: 130px;
+    width: 130px;
+    border-radius:50%;
+    opacity: 0;
+}
+
+.large{
+    position: absolute;
+    top:40px;
+    left:43px;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+    opacity: 0;
+}
+
+.upload-icon:hover{
+    opacity:1;
+    background:rgba(0,0,0,0.5) center no-repeat;
+}
+
+.large:hover{
+    opacity: 1;
+}
+
+.tags-list,.follow-authors-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.tags-list li{
+    display: inline-block;
+    background-color:#6610f2;
+    color:#ffffff;
+    padding:7px;
+    border-radius:.25rem;
+}
+
+.fa-times:hover{
+    color:#dc3545;
+    cursor: pointer;
+}
+
+.follow-authors-list li{
+    display: inline-block;
+    padding: 15px;
+    width:103px;
+}
+
+.authors-avatar{
+    width:75px;
+    height: 75px;
+}
+
+.follow-btn{
+    margin-top:5px;
+    margin-left:7px;
+    cursor: pointer;
+}
+
+.author-name{
+    text-align: center;
+    margin-bottom: 0;
+}

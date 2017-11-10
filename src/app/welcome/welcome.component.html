@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-lg-12">
+      <form>
+        <h4 class="profile-completion-heading">Complete your profile</h4>
+        <div class="row">
+          <div class="col-md-2 col-lg-2">
+        <div class="form-group pull-left">
+            <label for="profilePicture"> <img src="../../assets/tt2_128.jpg" class="rounded-circle pull-left avatar">
+              <div class="upload-icon"><span class="fa-stack fa-lg large">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-upload fa-stack-1x fa-inverse"></i>
+                </span></div></label>
+            <input type="file" class="form-control-file" id="profilePicture" placeholder="">
+          </div>
+        </div>
+        <div class="col-md-10 col-lg-10">
+        <div class="form-group pull-left username-form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter username">
+          <small id="emailHelp" class="form-text text-muted">This will be your unique username. All the stories, comment's will be linked to this username</small>
+        </div>
+      </div>
+      </div>
+        <div class="clear-fix"></div>
+       
+        <div class="form-group">
+          <label for="Interests">Interests</label>
+          <input type="text" class="form-control" id="Interests" placeholder="Interests">
+        </div>
+
+        <div class="interest-tags">
+            <ul class="tags-list">
+              <li>Games <i class="fa fa-times" aria-hidden="true"></i></li>
+              <li>Technology <i class="fa fa-times" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+
+          <div class="follow-authors">
+            <p class="follow-authors-heading">Follow Authors</p>
+              <ul class="follow-authors-list">
+                <li><img src="../../assets/pp.jpg" class="rounded-circle pull-left authors-avatar"><p class="author-name">Ravinder Singh</p><button type="submit" class="btn btn-outline-warning btn-sm follow-btn">Follow</button></li>
+                <li><img src="../../assets/tt_128.jpg" class="rounded-circle pull-left authors-avatar"><p class="author-name">John snow</p><button type="submit" class="btn btn-outline-warning btn-sm follow-btn">Follow</button></li>
+                <li><img src="../../assets/tt2_128.jpg" class="rounded-circle pull-left authors-avatar"><p class="author-name">Jack Reacher</p><button type="submit" class="btn btn-outline-warning btn-sm follow-btn">Follow</button></li>
+              </ul>
+            </div>
+            <small id="emailHelp" class="form-text text-muted">Note: After follow is clicked we update the DB and change the button to following</small>
+            <br>
+
+        <button type="submit" class="btn btn-outline-success">Save</button>
+      </form>
+    </div>
+  </div>
+</div>

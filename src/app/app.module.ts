@@ -11,6 +11,8 @@ import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { WriteupsComponent } from './writeups/writeups.component';
 import { TinymceEditorComponent } from './tinymce-editor/tinymce-editor.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { ReadComponent } from './read/read.component';
 
 
 const ROUTES = [
@@ -38,6 +40,14 @@ const ROUTES = [
   {
     path:'writeup',
     component:WriteupsComponent
+  },
+  {
+    path:'welcome',
+    component:WelcomeComponent
+  },
+  {
+    path:'read',
+    component:ReadComponent
   }
 ];
 
@@ -52,7 +62,9 @@ const ROUTES = [
     LoginComponent,
     RegistrationComponent,
     WriteupsComponent,
-    TinymceEditorComponent
+    TinymceEditorComponent,
+    WelcomeComponent,
+    ReadComponent
   ],
   imports: [
     BrowserModule,
