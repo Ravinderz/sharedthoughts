@@ -13,6 +13,8 @@ import { WriteupsComponent } from './writeups/writeups.component';
 import { TinymceEditorComponent } from './tinymce-editor/tinymce-editor.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ReadComponent } from './read/read.component';
+import { TopicComponent } from './topic/topic.component';
+import { UserTopicsComponent } from './user-topics/user-topics.component';
 
 
 const ROUTES = [
@@ -48,6 +50,14 @@ const ROUTES = [
   {
     path:'read',
     component:ReadComponent
+  },
+  {
+    path:'topic',
+    component:TopicComponent
+  },
+  {
+    path:'@ravinderz/topics',
+    component:UserTopicsComponent
   }
 ];
 
@@ -64,7 +74,9 @@ const ROUTES = [
     WriteupsComponent,
     TinymceEditorComponent,
     WelcomeComponent,
-    ReadComponent
+    ReadComponent,
+    TopicComponent,
+    UserTopicsComponent
   ],
   imports: [
     BrowserModule,

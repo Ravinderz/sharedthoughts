@@ -1,7 +1,5 @@
 # Sharedthoughts
-
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/5c5d0b5cb2df4a018dcba643f84abe2c)](https://www.codacy.com/app/ravinderz/sharedThoughts?utm_source=github.com&utm_medium=referral&utm_content=Ravinderz/sharedThoughts&utm_campaign=badger)
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
 ## Development server
