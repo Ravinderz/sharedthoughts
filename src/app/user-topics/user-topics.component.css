@@ -1,0 +1,60 @@
+.profile-wrapper{
+    margin-top: 15px;
+}
+
+.avatar{
+    margin-right:20px;
+}
+
+.author-name{
+    margin-top:15px;
+    font-size:30px;
+    font-family: 'Signika', sans-serif;
+    font-weight: 500;
+}
+
+.wrapper{
+    border-bottom: 1px solid rgb(242, 242, 242);
+    padding-bottom: 20px;
+}
+
+.edit-profile{
+    margin-top: 30px;
+    margin-right:20px;
+   color:#007bff;
+}
+
+.interest-tags{
+    list-style: none;
+    padding-left:0;
+}
+
+.interest-tags li{
+    display: inline-block;
+    padding-right:3px;
+}
+
+.btn-outline-violet{
+    color: #8c42f4;
+    background-color: transparent;
+    background-image: none;
+    border-color: #8c42f4;
+}
+
+.sub-card{
+    margin-bottom:18px;
+}
+
+.topic-wrapper{
+    margin-top:10px;
+    border-bottom:1px solid rgb(242, 242, 242);
+}
+
+.right-arrow{
+    margin-left:5px;
+}
+
+.more{
+    padding-bottom:2px;
+    cursor: pointer;
+}
