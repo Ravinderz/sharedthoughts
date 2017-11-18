@@ -1,0 +1,60 @@
+.page-header{
+    margin-top:40px;
+    padding-bottom:20px;
+    border-bottom: 1px solid rgb(242, 242, 242)
+}
+
+.follow-btn{
+    margin-top:5px;
+    cursor: pointer;
+}
+
+/* story css */
+.story-title{
+    margin-top:20px;
+}
+
+.date-of-story{
+    margin-bottom:10px;
+}
+
+.story-image{
+    display: block;
+    margin: 25px auto;
+    
+}
+
+.share-icons{
+    margin-right:30px;
+    margin-top:28px;
+    font-size:18px;
+}
+
+.share-icons-list{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+
+.share-icons-list li{
+    display:inline-block;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.story-content{
+    margin-left:150px;
+    margin-right:150px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .story-content{
+        margin-left:10px;
+        margin-right:10px;
+    }
+
+    .story-image{
+        width: 100%;
+    }
+}
