@@ -4,11 +4,11 @@ var Schema = mongoose.Schema;
 
 
 var article =  mongoose.model('article',new Schema({
-    'userID':String,
-    'article':[{
+
                 'article_id': String,
                 'article_title':String,
                 'article_date': {type:Date,default:Date.now},
+                'article_by':String,
                 'article_content':String,
                 'article_likes':[{
                     'liked_by':String
@@ -25,8 +25,6 @@ var article =  mongoose.model('article',new Schema({
                       'comment':String
                        }]
                 }],
-
-             }]
 
 }));
 
