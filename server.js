@@ -10,6 +10,7 @@ const db = mongoose.connect(config.database,{ useMongoClient: true});
 
 // getting api routes
 const user = require('./server/routes/user.route');
+const article = require('./server/routes/articles.route');
 
 const app = express();
 
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 // API location
 app.use('/api/v1.0/user', user);
+app.use('/api/v1.0/article', article);
 
 // Send all other requests to the Angular app
 app.get('*', (req, res) => {
