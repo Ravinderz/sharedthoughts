@@ -21,3 +21,11 @@
 .btn-outline-success:focus, .btn-outline-success:active{
     box-shadow: 0 0 0 0 !important;
 }
+
+.dropdown-btn{
+    background-color: transparent;
+}
+
+.dropdown-btn:focus, .dropdown-btn:active{
+    box-shadow: 0 0 0 0 !important;
+}

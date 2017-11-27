@@ -32,7 +32,9 @@
 		"../node_modules/tinymce/plugins/autosave/plugin.js",
 		"../node_modules/tinymce/plugins/code/plugin.js",
 		"../node_modules/tinymce/plugins/emoticons/plugin.js",
-		"../node_modules/tinymce/plugins/media/plugin.js"
+    "../node_modules/tinymce/plugins/media/plugin.js",
+    "../node_modules/jquery/dist/jquery.min.js",
+    "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
 	  ],
       "environmentSource": "environments/environment.ts",
       "environments": {

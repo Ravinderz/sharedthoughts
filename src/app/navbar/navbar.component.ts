@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
+  isUserLoggedin : boolean = true;
+
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -23,5 +25,9 @@ export class NavbarComponent implements OnInit {
 
   signUp(){
     this.router.navigate(['/register']);
+  }
+
+  logout(){
+    this.isUserLoggedin = false;
   }
 }

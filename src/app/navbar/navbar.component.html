@@ -3,8 +3,22 @@
     <a class="navbar-brand logo">Shared Thoughts</a>
     <form class="form-inline">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <div *ngIf="!isUserLoggedin">
       <button class="btn btn-outline-success my-2 my-sm-0 sign-in" type="button" (click)="signIn()">Sign in</button>
       <button class="btn btn-outline-success my-2 my-sm-0" type="button" (click)="signUp()">Sign Up</button>
+    </div>
+    <div *ngIf="isUserLoggedin">
+      <div class="dropdown show">
+        <button class="btn dropdown-btn" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="../../assets/pp.jpg" height="40px" width="40px" alt="avatar" class="avatar rounded-circle">
+        </button>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" routerLink="/profile">Profile</a>
+          <a class="dropdown-item" (click)="logout()">Logout</a>
+        </div>
+      </div>
+    </div>
     </form>
   </nav>
 </div>

@@ -1,17 +1,17 @@
 export class User {
     firstName : String;
     lastName : String;
-    email : {type:String, unique : true};
+    email : String;
     password : String;
-    phone : {type:Number};
+    phone : Number;
     stats : {
-        articles_count:{type:Number,default:0},
-        popularity_index:{type:Number,default:0},
+        articles_count:Number,
+        popularity_index:Number,
         authors_following:String[];
     };
-    isActive : {type:Boolean , default:true};
+    isActive : Boolean;
     profileImage: String;
     interests: String[];
-    createdTime :  { type : Date};
-    updatedTime :  { type : Date};
+    createdTime : Date;
+    updatedTime : Date;
 }

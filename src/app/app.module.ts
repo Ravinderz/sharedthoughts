@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
-import { WriteupsComponent } from './writeups/writeups.component';
+import { WriteComponent } from './write/write.component';
 import { TinymceEditorComponent } from './tinymce-editor/tinymce-editor.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ReadComponent } from './read/read.component';
@@ -41,8 +41,8 @@ const ROUTES = [
     component: RegistrationComponent
   },
   {
-    path:'writeup',
-    component:WriteupsComponent
+    path:'write',
+    component:WriteComponent
   },
   {
     path:'welcome',
@@ -72,7 +72,7 @@ const ROUTES = [
     ProfileComponent,
     LoginComponent,
     RegistrationComponent,
-    WriteupsComponent,
+    WriteComponent,
     TinymceEditorComponent,
     WelcomeComponent,
     ReadComponent,
