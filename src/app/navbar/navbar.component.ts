@@ -16,4 +16,12 @@ export class NavbarComponent implements OnInit {
   redirectToLogin(){
     this.router.navigate(['/login']);
   }
+
+  signIn(){
+    this.router.navigate(['/login']);
+  }
+
+  signUp(){
+    this.router.navigate(['/register']);
+  }
 }
