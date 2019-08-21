@@ -2,12 +2,12 @@
   <div class="container">
     <div class="row wrapper"> <!-- first row  -->
       <div class="col-md-2 col-lg-2">
-        <img src="../../assets/pp.jpg" height="150px" width="150px" alt="avatar" class="avatar rounded-circle">
+        <img src="{{user.profileImage}}" height="150px" width="150px" alt="avatar" class="avatar rounded-circle">
       </div>
       <div class="col-md-10 col-lg-10">
         <div class="about-author">
           <div class="author-details pull-left">
-            <p class="author-name ">Ravinder Singh</p>
+            <p class="author-name">{{user.firstName}} {{user.lastName}}</p>
           </div>
           <div class="edit-profile pull-right">
             <i class="fa fa-pencil-square-o " aria-hidden="true"></i>
@@ -15,9 +15,7 @@
           <div class="clear-fix"></div>
           <p style="margin-bottom:5px;color: #868e96;">Interests</p>
           <ul class="interest-tags pull-left">
-            <li><button type="button" class="btn btn-outline-violet">Technology</button></li>
-            <li><button type="button" class="btn btn-outline-violet">Photography</button></li>
-            <li><button type="button" class="btn btn-outline-violet">Music</button></li>
+            <li *ngFor="let interest of user.interests"><button type="button" class="btn btn-outline-violet">{{interest}}</button></li>
           </ul>
           <button type="button" class="btn btn-outline-dark pull-right" style="margin-right:15px;">Follow</button>
         </div>
@@ -31,19 +29,19 @@
             <li class="metric-list-item">
               <div class="card-round-link card-round-link-first overflow-hidden">
                 <p class="metrics-text">Articles Written</p>
-                <p class="metrics-number-1">21</p>
+                <p class="metrics-number-1">{{user.stats.articles_count}}</p>
               </div>
             </li>
             <li class="metric-list-item">
               <div class="card-round-link card-round-link-center overflow-hidden">
                 <p class="metrics-text">Following Authors</p>
-                <p class="metrics-number-2">15</p>
+                <p class="metrics-number-2">{{user.stats.authors_following?.length}}</p>
               </div>
             </li>
             <li class="metric-list-item">
               <div class="card-round-link card-round-link-last overflow-hidden">
                 <p class="metrics-text">Popularity Index</p>
-                <p class="metrics-number-3">8.5</p>
+                <p class="metrics-number-3">{{user.stats.popularity_index}}</p>
               </div>
             </li>
           </ul>
@@ -55,76 +53,13 @@
         <div class="recent-articles"> <!-- recent articles div starts -->
           <h4 class="heading">Recent Articles</h4>
           <div class="card-columns">
-            <div class="card text-center">
+            <div class="card text-center" *ngFor="let article of recentArticles">
               <div class="card-body">
-                <h4 class="card-title">Big Tech and Amazon: too powerful to break up?</h4>
-                <p class="card-text">While Google, Facebook and Twitter are set for a grilling in Congress over Russia, it is the online retailer that is drawing intense scrutiny.</p>
-                <p class="card-text"><small class="text-muted">Last updated Oct 30.</small></p>
+                <h4 class="card-title">{{article.article_title}}</h4>
+                <p class="card-text">{{article.article_content}}</p>
+                <p class="card-text"><small class="text-muted">Last updated {{article.article_date}}.</small></p>
               </div>
             </div>
-            <div class="card text-center">
-              <div class="card-body">
-                <h4 class="card-title">Life Is Math — Not Magic</h4>
-                <p class="card-text">Some say life is like chess, running a marathon, or playing a video game. I like those simplified looks on life because it’s already complicated enough.</p>
-                <p class="card-text"><small class="text-muted">Last updated Oct 30.</small></p>
-              </div>
-            </div>
-            <div class="card text-center">
-              <div class="card-body">
-                <h4 class="card-title">Welcome to SpaceX City: The Ultimate Startup</h4>
-                <p class="card-text">How the private space industry will reinvent economics, exploration, and humanity.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card text-center">
-              <div class="card-body">
-                <h4 class="card-title">My stupid excuses for not writing</h4>
-                <p class="card-text">My stupid excuses for not writing, Its been fun writing articles to my heart content, but here are my excuses</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card text-center">
-              <div class="card-body">
-                <h4 class="card-title">200 free online courses</h4>
-                <p class="card-text">200 universities just launched 560 free online courses. Here’s the full list.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card text-center">
-                <div class="card-body">
-                  <h4 class="card-title">Big Tech and Amazon: too powerful to break up?</h4>
-                  <p class="card-text">While Google, Facebook and Twitter are set for a grilling in Congress over Russia, it is the online retailer that is drawing intense scrutiny.</p>
-                  <p class="card-text"><small class="text-muted">Last updated Oct 30.</small></p>
-                </div>
-              </div>
-              <div class="card text-center">
-                <div class="card-body">
-                  <h4 class="card-title">Life Is Math — Not Magic</h4>
-                  <p class="card-text">Some say life is like chess, running a marathon, or playing a video game. I like those simplified looks on life because it’s already complicated enough.</p>
-                  <p class="card-text"><small class="text-muted">Last updated Oct 30.</small></p>
-                </div>
-              </div>
-              <div class="card text-center">
-                <div class="card-body">
-                  <h4 class="card-title">Welcome to SpaceX City: The Ultimate Startup</h4>
-                  <p class="card-text">How the private space industry will reinvent economics, exploration, and humanity.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <div class="card text-center">
-                <div class="card-body">
-                  <h4 class="card-title">My stupid excuses for not writing</h4>
-                  <p class="card-text">My stupid excuses for not writing, Its been fun writing articles to my heart content, but here are my excuses</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <div class="card text-center">
-                <div class="card-body">
-                  <h4 class="card-title">200 free online courses</h4>
-                  <p class="card-text">200 universities just launched 560 free online courses. Here’s the full list.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
           </div>
         </div> <!-- recent articles div ends -->
       </div>

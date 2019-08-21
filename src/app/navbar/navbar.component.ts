@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  isUserLoggedin : boolean = true;
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  redirectToLogin(){
+    this.router.navigate(['/login']);
+  }
+
+  signIn(){
+    this.router.navigate(['/login']);
+  }
+
+  signUp(){
+    this.router.navigate(['/register']);
+  }
+
+  logout(){
+    this.isUserLoggedin = false;
+  }
 }

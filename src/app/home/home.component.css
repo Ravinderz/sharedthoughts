@@ -3,6 +3,14 @@
     margin-bottom:15px;
 }
 
+.right-side-bar{
+    margin-top:57px;
+}
+
+.Article-display-heading{
+    margin-bottom:15px;
+}
+
 .card{
     margin-bottom:10px;
     margin-right:5px;
@@ -87,3 +95,114 @@
 
 }
 }
+
+.testimonials{
+    margin-top:60px;
+    margin-bottom:60px;
+    border:transparent;
+}
+
+.testimonials img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.testimonials .author-name{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.testimonials .card-text{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* interested section css */
+/* .interested-wrapper{
+    background-color: #343a40;
+    color:#ffffff;
+} */
+
+.interested-wrapper{
+    background-color: #f8f9fa;
+}
+
+.interested-heading{
+    margin-top:30px;
+}
+
+.sign-up-heading{
+    margin-bottom:30px;
+}
+
+.interested-text{
+    font-size:20px;
+    margin-bottom:60px;
+    margin-top:60px;
+}
+ 
+  .form-signin {
+    max-width: 330px;
+    padding: 25px;
+    margin: 0 auto;
+    border: 1px solid #343a40; 
+    /* border: 1px solid #ffffff; */
+    border-radius: .25rem;
+    margin-bottom:60px;
+  }
+
+  .form-signin .form-signin-heading,
+  .form-signin .checkbox {
+    margin-bottom: 10px;
+  }
+
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+
+  .form-signin input{
+    border: 1px solid #343a40;
+  }
+
+   .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-radius:0px;
+  } 
+
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  #inputFirstName{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  #inputLastName{
+    margin-bottom: -1px;
+    border-radius:0px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .started-btn{
+        margin-top:25px;
+  }

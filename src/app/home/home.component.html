@@ -2,17 +2,17 @@
   <div class="row">
     <div class="col-md-9 col-lg-9">
       <div class="article-display">
-        <div class="card">
+          <h4 class="Article-display-heading">Recent Articles</h4>
+        <div class="card" *ngFor="let article of recentArticles">
           <div class="card-body">
             <div class="row">
               <div class="col-md-2 col-lg-2">
                 <img src="http://via.placeholder.com/100x100" class="rounded-circle pull-left avatar">
               </div>
               <div class="col-md-10 col-lg-10">
-                <h4 class="card-title">Big Tech and Amazon: too powerful to break up?</h4>
-                <p class="card-text">While Google, Facebook and Twitter are set for a grilling in Congress over Russia, it is the online retailer
-                  that is drawing intense scrutiny.</p>
-                <span class="text-muted article-author">by Ravinder Singh<span class="seperator">.</span><span class="date">Oct 30</span></span>
+                <h4 class="card-title">{{article.article_title}}</h4>
+                <p class="card-text">{{article.article_text}}</p>
+                <span class="text-muted article-author">by {{article.article_author}}<span class="seperator">.</span><span class="date">{{article.date}}</span></span>
                 <div class="article-interactions">
                   <button type="button" class="btn btn-outline-dark read-more pull-left">Read More</button>
                   <div class="icons pull-right">
@@ -24,91 +24,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-2 col-lg-2">
-                <img src="http://via.placeholder.com/100x100" class="rounded-circle pull-left avatar">
-              </div>
-              <div class="col-md-10 col-lg-10">
-                <h4 class="card-title">Life Is Math — Not Magic</h4>
-                <p class="card-text">Some say life is like chess, running a marathon, or playing a video game. I like those simplified looks on
-                  life because it’s already complicated enough.</p>
-                <span class="text-muted article-author">by Praveen Kumar<span class="seperator">.</span><span class="date">Oct 30</span></span>
-                <div class="article-interactions">
-                  <button type="button" class="btn btn-outline-dark read-more pull-left">Read More</button>
-                  <div class="icons pull-right">
-                    <i class="fa fa-heart-o fa-lg" aria-hidden="true"></i>
-                    <i class="fa fa-bookmark-o fa-lg" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card"> <!-- card starts here -->
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-2 col-lg-2">
-                <img src="http://via.placeholder.com/100x100" class="rounded-circle pull-left avatar">
-              </div>
-              <div class="col-md-10 col-lg-10">
-                <h4 class="card-title">My stupid excuses for not writing</h4>
-                <p class="card-text">My stupid excuses for not writing, Its been fun writing articles to my heart content, but here are my excuses</p>
-                <span class="text-muted article-author">by Sindhu Reddy<span class="seperator">.</span><span class="date">Oct 30</span></span>
-                <div class="article-interactions">
-                  <button type="button" class="btn btn-outline-dark read-more pull-left">Read More</button>
-                  <div class="icons pull-right">
-                    <i class="fa fa-heart-o fa-lg" aria-hidden="true"></i>
-                    <i class="fa fa-bookmark-o fa-lg" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- card end here -->
-        <div class="card"> <!-- card starts here -->
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-2 col-lg-2">
-                <img src="http://via.placeholder.com/100x100" class="rounded-circle pull-left avatar">
-              </div>
-              <div class="col-md-10 col-lg-10">
-                <h4 class="card-title">200 free online courses</h4>
-                <p class="card-text">200 universities just launched 560 free online courses. Here’s the full list.</p>
-                <span class="text-muted article-author">by Bharath Devanga<span class="seperator">.</span><span class="date">Oct 30</span></span>
-                <div class="article-interactions">
-                  <button type="button" class="btn btn-outline-dark read-more pull-left">Read More</button>
-                  <div class="icons pull-right">
-                    <i class="fa fa-heart-o fa-lg" aria-hidden="true"></i>
-                    <i class="fa fa-bookmark-o fa-lg" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- card end here -->
-        <div class="card"> <!-- card starts here -->
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-2 col-lg-2">
-                <img src="http://via.placeholder.com/100x100" class="rounded-circle pull-left avatar">
-              </div>
-              <div class="col-md-10 col-lg-10">
-                <h4 class="card-title">Welcome to SpaceX City: The Ultimate Startup</h4>
-                <p class="card-text">How the private space industry will reinvent economics, exploration, and humanity.</p>
-                <span class="text-muted article-author">by Manoj<span class="seperator">.</span><span class="date">Oct 30</span></span>
-                <div class="article-interactions">
-                  <button type="button" class="btn btn-outline-dark read-more pull-left">Read More</button>
-                  <div class="icons pull-right">
-                    <i class="fa fa-heart-o fa-lg" aria-hidden="true"></i>
-                    <i class="fa fa-bookmark-o fa-lg" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- card end here -->
+         <!-- card end here -->
       </div>
     </div>
     <div class="col-md-3 col-lg-3">
@@ -118,11 +34,7 @@
             Featured
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Big Tech and Amazon: too powerful to break up?</li>
-            <li class="list-group-item">Life Is Math — Not Magic</li>
-            <li class="list-group-item">Welcome to SpaceX City: The Ultimate Startup</li>
-            <li class="list-group-item">My stupid excuses for not writing</li>
-            <li class="list-group-item">200 universities just launched 560 free online courses. Here’s the full list.</li>
+            <li class="list-group-item" *ngFor="let storyTitle of featuredStories">{{storyTitle}}</li>
           </ul>
         </div>
         <div class="card" style="width: 17rem;">
@@ -130,11 +42,8 @@
               Top Authors
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Ravinder Singh</li>
-              <li class="list-group-item">Praveen Kumar</li>
-              <li class="list-group-item">Bharath Devanga</li>
-              <li class="list-group-item">Ibrahim shaik</li>
-              <li class="list-group-item">Sindhu Reddy</li>
+              <li class="list-group-item" *ngFor="let author of topAuthors">{{author}}</li>
+
             </ul>
           </div>
       </div>
@@ -208,7 +117,46 @@
           </div>
         </div>
       </div>
-    </div> <!-- second row ends here -->
-    <div class="row"></div>
+    </div>
+  </div> <!-- second row ends here -->
+</div>
+<div class="interested-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-12">
+        <h4 class="interested-heading">Get Started</h4>
+          <p class="text-center interested-text">
+              The only other place to be yourself is at SharedThoughts.<br> Share your thought, get appreciated by fellow Writer's, Followers and Readers.
+          </p>
+          <form class="form-signin text-center">
+            <h4 class="sign-up-heading">Sign Up</h4>
+              <label for="inputFirstName" class="sr-only">Email address</label>
+              <input type="text" id="inputFirstName" class="form-control" placeholder="First Name" required>
+              <label for="inputLastName" class="sr-only">Email address</label>
+              <input type="text" id="inputLastName" class="form-control" placeholder="Last Name" required>
+              <label for="inputEmail" class="sr-only">Email address</label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+              <label for="inputPassword" class="sr-only">Password</label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              <div class="checkbox">
+                
+              </div>
+              <button class="btn btn-outline-warning my-2 started-btn" type="button">Sign Up</button>
+            </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-lg-12">
+        <div class="card text-center testimonials">
+        <div class="card-body">
+          <img src="../../assets/tt2_128.jpg" class="testimonial-avt">
+          <p class="author-name">John Snow</p>
+          <p class="card-text lead">SharedThoughts is such a cool community, I always keep coming back for more.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

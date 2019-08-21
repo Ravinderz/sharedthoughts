@@ -1,0 +1,35 @@
+
+<div class="container">
+    <div class="page-header">
+  <div class="row">
+    <div class="col-md-2 col-lg-2">
+        <img src="../../assets/pp.jpg" height="128px" width="128px" class="rounded-circle pull-left avatar">
+    </div>
+    <div class="col-md-10 col-lg-10">
+        <h4 class="author-name">Ravinder Singh</h4>
+        <p class="text-muted">Loves to write about video games, technology. A passionate gamer and member of pc masterace</p>
+        <button type="submit" class="btn btn-outline-warning btn-sm follow-btn">Follow</button>
+    </div>
+  </div>
+</div>
+<div class="story">
+  <div class="story-header">
+    <div class="story-details pull-left">
+  <h3 class="story-title">{{article.title}}</h3>
+  <div class="date-of-story text-muted">{{article.date}}</div>
+</div>
+  <div class="share-icons pull-right">
+    <ul class="share-icons-list">
+        <li><i class="fa fa-thermometer-half" aria-hidden="true"></i></li>
+        <li><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+        <li><i class="fa fa-bookmark-o" aria-hidden="true"></i></li>
+        <li><i class="fa fa-share-alt" aria-hidden="true"></i></li>
+    </ul>
+  </div>
+  </div>
+  <div class="clear-fix"></div>
+  <div class="story-content" [innerHTML]="article.content">
+    
+  </div>
+</div>
+</div>
