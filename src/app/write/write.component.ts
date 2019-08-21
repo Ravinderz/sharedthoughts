@@ -10,5 +10,9 @@ export class WriteComponent implements  OnInit {
   
     ngOnInit() {
     }
+
+    keyupHandlerFunction(event:any){
+      console.log(event);
+    }
 }
 
